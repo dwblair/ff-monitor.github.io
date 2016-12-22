@@ -84,7 +84,7 @@ vAxis: {
           $.each(results, function (i, row) {
             data.addRow([
               (new Date(row.timestamp)),
-              parseFloat(row.light)
+              parseFloat(row.light/4096.)
             ]);
           });
 
